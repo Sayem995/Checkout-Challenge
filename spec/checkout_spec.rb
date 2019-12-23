@@ -7,8 +7,12 @@ describe Shop do
     end
 
     it 'returns -1 when recieves a number within string' do
-      expect(subject.checkout('ABBC1')).to eq -1 
+      expect(subject.checkout('ABBC1')).to eq -1
     end
+
+    it 'returns -1 when recieves an integer' do
+      expect(subject.checkout(18)).to eq -1
+    end 
 
 
   end

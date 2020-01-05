@@ -13,6 +13,8 @@ def calc(items)
     case item
     when 'A'
       @cost += 50
+    when 'B'
+      @cost += 30
     end
   end
   @cost

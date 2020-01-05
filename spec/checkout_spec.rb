@@ -17,6 +17,7 @@ describe Shop do
     context 'add to cost' do
       it '50 for every "A"' do
         expect(subject.checkout('A')).to eq 50
+        expect(subject.checkout('AA')).to eq 100
       end
     end
 

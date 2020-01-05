@@ -15,6 +15,8 @@ def calc(items)
       @cost += 50
     when 'B'
       @cost += 30
+    when 'C'
+      @cost += 20
     end
   end
   @cost

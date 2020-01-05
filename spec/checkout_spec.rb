@@ -28,6 +28,10 @@ describe Shop do
       it '20 for every "C"' do
         expect(subject.checkout('C')).to eq 20
       end
+
+      it '15 for every "D"' do
+        expect(subject.checkout('D')).to eq 15  
+      end
     end
 
   end

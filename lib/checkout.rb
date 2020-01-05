@@ -10,15 +10,15 @@ end
 
 def calc(items)
   items.each do |item|
-    case item
+    @cost += case item
     when 'A'
-      @cost += 50
+       50
     when 'B'
-      @cost += 30
+       30
     when 'C'
-      @cost += 20
+       20
     when 'D'
-      @cost += 15
+       15
     end
   end
   @cost

@@ -12,8 +12,13 @@ describe Shop do
 
     it 'returns -1 when recieves an integer' do
       expect(subject.checkout(18)).to eq -1
-    end 
+    end
 
+    context 'add to cost' do
+      it '50 for every "A"' do
+        expect(subject.checkout('A')).to eq 50
+      end
+    end
 
   end
 end
